@@ -27,7 +27,7 @@ def project_api_routes(endpoints):
         resp = {}
         try:
             req_body = request.json
-            resp['hello'] = hello
+            # resp['hello'] = hello
             # req_body = req_body.to_dict()
             user_collection.insert_one(req_body)            
             print("User Data Stored Successfully in the Database.")
