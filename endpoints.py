@@ -9,9 +9,9 @@ con_string = "mongodb+srv://jeyasree:jeyasree@cluster0.o7d2kwp.mongodb.net/?retr
 
 client = pymongo.MongoClient(con_string)
 
-db = client.get_database('example')
+db = client.get_database('example1')
 
-user_collection = pymongo.collection.Collection(db, "collectexample") #(<database_name>,"<collection_name>")
+user_collection = pymongo.collection.Collection(db, "example") #(<database_name>,"<collection_name>")
 print("MongoDB connected Successfully")
 
 
